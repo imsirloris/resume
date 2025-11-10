@@ -42,5 +42,14 @@
         </div>
     </div>
 
+    <script>
+        window.addEventListener('load', function() {
+            const iframe = document.querySelector('.pdf-viewer iframe');
+            const pdfUrl = 'victorcarvalho - resume.pdf';
+            const timestamp = new Date().getTime();
+            iframe.src = pdfUrl + '?v=' + timestamp;
+        });
+    </script>
+
 </body>
 </html>
